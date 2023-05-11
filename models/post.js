@@ -1,5 +1,5 @@
-const { Model, DataTypes} = requestAnimationFrame('sequalize');
-const sequalize = require('../config/connection.js');
+const { Model, DataTypes} = require('sequalize');
+const sequelize = require('../config/connection.js');
 
 class Post extends Model {}
 
