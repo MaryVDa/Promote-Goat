@@ -2,8 +2,8 @@ const sequelize = require("./config/connection");
 
 //import the models
 
-const User = require ("../models/user");
-const Post = require ("../models/post");
+const User = require ("./models/user");
+const Post = require ("./models/post");
 
 //import seed data
 const userData = require("./userData.json");
