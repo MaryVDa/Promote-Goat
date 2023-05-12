@@ -6,7 +6,7 @@ const session = require('express-session');
 const routes = require('./controllers');
 
 //Create database connection
-const sequelize = require('./config/connection');
+const sequelize = require('../config/connection.js');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 //create express app
@@ -31,7 +31,7 @@ const sess = {
 };
 
 app.use(session(sess));
-app.use(express.json());git
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
