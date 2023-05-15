@@ -22,7 +22,7 @@ const seedDatabase = async () => {
         returning: true,
     });
 
-    //bulk create Post data ussing the JSON file
+    //bulk create Post data using the JSON file
     //set user_id to random user
     for (const Post of postData) {
         await Post.create({
