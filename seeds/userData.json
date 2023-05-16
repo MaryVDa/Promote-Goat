@@ -1,5 +1,5 @@
 [
-  { "id": "1", "email": "test1@mail.com", "password": "1129434" },
-  { "id": "2", "email": "test2@mail.com", "password": "753466" },
-  { "id": "3", "email": "test3@mail.com", "password": "74562" }
+  { "id": "1", "name": "yourNAME1" , "email": "test1@mail.com", "password": "1129434" },
+  { "id": "2", "name": "yourNAME2" ,"email": "test2@mail.com", "password": "753466" },
+  { "id": "3", "name": "yourNAME3" , "email": "test3@mail.com", "password": "74562" }
 ]
