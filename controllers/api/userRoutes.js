@@ -11,6 +11,17 @@ router.post("/", async (req, res) => {
       res.status(200).json(userData);
     });
   } catch (err) {
+    console.log();
+    res.status(400).json(err);
+  }
+});
+
+router.get("/", async (req, res) => {
+  try {
+    const userData = await User.findAll();
+    console.log(userData, "this is the user data");
+    res.status(200).json(userData);
+  } catch (err) {
     res.status(400).json(err);
   }
 });
