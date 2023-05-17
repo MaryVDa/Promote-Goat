@@ -1,7 +1,12 @@
 const { Model, DataTypes } = require("sequelize");
-const sequelize = require("./config/connection");
+const sequelize = require("../config/connection");
 
-class Post extends Model {}
+class Post extends Model {
+  static async createPost(postData) {
+    const post = await Post.create(postData);
+    return post;
+  }
+}
 
 Post.init(
   {
@@ -30,7 +35,12 @@ Post.init(
     freezeTableName: true,
     underscored: true,
     modelName: "post",
-  }
+  },
+  
+
+  
 );
 
-model.exports = Post;
+
+module.exports = Post;
+
