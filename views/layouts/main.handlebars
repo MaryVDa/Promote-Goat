@@ -12,7 +12,8 @@
         <h1>Promote Goat 🐐</h1>
 
         <nav>
-            {{#if loggedIn}}
+            <button class = "no-button" id = "home-btn" href="./main.handlebars">Home</button>
+            {{#if logged_in}}
                 <a href="/profile">Profile</a>
                 <button class ="no-button" id ="logout">Logout</button>
             {{else}}
@@ -33,7 +34,7 @@
 
 {{!-- Render the script only if the user is logged in. If the user is logged in, render the logout button. If the user is not logged in, render the login button. --}}
 
-{{#if loggedIn}}
+{{#if logged_in}}
     <script src="./js/logout.js"></script>
 {{else}}
     <script src="./js/login.js"></script>
