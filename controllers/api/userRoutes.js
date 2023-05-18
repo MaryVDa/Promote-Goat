@@ -1,8 +1,6 @@
 const router = require("express").Router();
 const { User } = require("../../models");
 
-// GET ALL users
-
 // CREATE new user
 router.post("/", async (req, res) => {
   try {
@@ -13,15 +11,26 @@ router.post("/", async (req, res) => {
       res.status(200).json(userData);
     });
   } catch (err) {
-    console.log();
+    console.log("You created a new user!");
+    res.status(400).json(err);
+  }
+});
+// GET user by id
+router.get("/:id", async (req, res) => {
+  try {
+    const userData = await User.findByPk(req.params.id);
+    res.status(200).json(userData);
+  } catch (err) {
     res.status(400).json(err);
   }
 });
 
+// GET all users
+
 router.get("/", async (req, res) => {
   try {
     const userData = await User.findAll();
-    console.log(userData, "this is the user data");
+    console.log(userData, "You got all users!");
     res.status(200).json(userData);
   } catch (err) {
     res.status(400).json(err);
@@ -36,7 +45,7 @@ router.post("/login", async (req, res) => {
     if (!userData) {
       res
         .status(400)
-        .json({ message: "Incorrect email or password, please try again" });
+        .json({ message: "Incorrect email or password, please try again." });
       return;
     }
     // Verify user
@@ -44,7 +53,7 @@ router.post("/login", async (req, res) => {
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: "Incorrect email or password, please try again" });
+        .json({ message: "Incorrect email or password, please try again." });
       return;
     }
     // Save session
