@@ -12,10 +12,11 @@
         <h1>Promote Goat 🐐</h1>
 
         <nav>
-            <button class = "no-button" id = "home-btn" href="./main.handlebars">Home</button>
+            <a class = "no-button" id = "home-btn" href="./main.handlebars">Home</a>
             {{#if logged_in}}
-                <a href="/profile">Profile</a>
-                <button class ="no-button" id ="logout">Logout</button>
+                <a href="views/profile">Profile</a>
+                <a href="views/homepage" class ="no-button" id ="logout">Logout</a>
+                <a href="views/post">Promotes</a>
             {{else}}
                 <a href="/login">Login</a>
             {{/if}}
