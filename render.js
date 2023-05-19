@@ -3,6 +3,9 @@ const exphbs = require("express-handlebars");
 
 const app = express();
 
+// This will use the public folder for static assets.
+app.use(express.static("public"));
+
 // Set up the Handlebars engine
 app.engine(
   "handlebars",
