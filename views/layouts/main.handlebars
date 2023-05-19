@@ -16,9 +16,9 @@
         <nav>
             <a class = "button is-dark" id = "home-btn" href="/homepage">Home</a>
             {{#if logged_in}}
-                <a href="views/profile">Profile</a>
-                <a href="views/homepage" class ="no-button" id ="logout">Logout</a>
-                <a href="views/post">Promotes</a>
+                <a href="/profile">Profile</a>
+                <a href="/homepage" class ="no-button" id ="logout">Logout</a>
+                <a href="/post">Promotes</a>
             {{else}}
                 <a href="/login">Login</a>
             {{/if}}
