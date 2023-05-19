@@ -43,7 +43,18 @@ app.get("/profile", (req, res) => {
   res.render("profile", data);
 });
 
+//Signup.HANDLEBARS
+app.get('/signup', (req, res) => {
+  res.render('signup');
+});
+
+//POST.HANDLEBARS
+app.get('/post', (req, res) => {
+  res.render('post');
+});
+
 // Start the server
 app.listen(3000, () => {
   console.log("Server started on http://localhost:3000");
 });
+
