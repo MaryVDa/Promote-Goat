@@ -28,6 +28,14 @@ Post.init(
     image: {
       type: DataTypes.BLOB,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "user",
+        key: "id",
+      },
+    },
   },
   {
     sequelize,
@@ -35,12 +43,7 @@ Post.init(
     freezeTableName: true,
     underscored: true,
     modelName: "post",
-  },
-  
-
-  
+  }
 );
 
-
 module.exports = Post;
-
