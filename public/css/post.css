@@ -1,0 +1,71 @@
+/* post.css */
+/* 
+/* Styling for the Create Promote section */
+.form.new-post-form {
+    margin-bottom: 20px;
+  }
+  
+  .form.new-post-form .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form.new-post-form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form.new-post-form .form-input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .form.new-post-form button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+  } */
+  
+  Styling for the Current Promotes section
+  .post-list {
+    padding-top: 10px;
+  }
+  
+  .post-list h3 {
+    margin-bottom: 10px;
+  }
+  
+  .post-list .row.mb-2 {
+    margin-bottom: 10px;
+  }
+  
+  .post-list .col-md-8 {
+    font-weight: bold;
+  }
+  
+  .post-list .btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the text-center section */
+  .text-center {
+    margin-top: 20px;
+  }
+  
+  .text-center h2 {
+    margin-bottom: 10px;
+  }
+  
+  .text-center .btn-primary {
+    background-color: #337ab7;
+    color: #ff0000;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
