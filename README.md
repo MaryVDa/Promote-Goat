@@ -2,7 +2,7 @@
 
 ## Description
 ${
-    Promote Goat is our website that we use to showcase and promote emerging artists in different genres. Using our website will give artists the oppurtunity to grow and and to branch out.
+    Promote Goat is our website that we use to showcase and promote emerging artists in different genres. Using our website will give artists the oppurtunity to grow and and to branch out. Posting their art to promote it and to recieve feedback on their work.
 }
 
 ## Table of Contents
@@ -25,7 +25,9 @@ This application is covered under the ${chosenLicense} license.
 
 ## Contributing
 ${
-   
+   Issues: Minor bug fixes, deployment with Heroku, along with back-end bugs interfering with front-end performance.
+   Contributers: Mary Dault, Malik Burrus, Nicholas Loeffler, Alvin Turner
+   Pull Request: Method of pushing/pulling off of the main branch, running MySql, Node, and push
 }
 
 ## Tests
