@@ -22,7 +22,7 @@ Post.init(
     description: {
       type: DataTypes.STRING,
     },
-    socialMedia: {
+    socMed: {
       type: DataTypes.STRING,
     },
     image: {

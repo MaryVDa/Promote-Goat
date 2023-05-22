@@ -13,13 +13,21 @@ router.get("/", async (req, res) => {
         },
       ],
     });
+    // const postData = await Post.findAll({
+    //   include: [
+    //     {
+    //       model: User,
+    //       attributes: ["username"],
+    //     },
+    //   ],
+    // });
 
-    // Serialize data so the template can read it
-    const posts = postData.map((post) => post.get({ plain: true }));
-    console.log(posts);
+    // // Serialize data so the template can read it
+    // const posts = postData.map((post) => post.get({ plain: true }));
+    // console.log(posts);
     // Pass serialized data and session flag into template
     res.render("homepage", {
-      posts,
+      //posts,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -52,13 +60,14 @@ router.get("/post/:id", async (req, res) => {
 });
 
 // GET all posts by the logged in user
-router.get("./profile", withAuth, async (req, res) => {
+router.get("/profile", withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
       include: [{ model: Post }],
     });
     const user = userData.get({ plain: true });
+    console.log(user);
     res.render("profile", {
       ...user,
       logged_in: true,
@@ -76,5 +85,13 @@ router.get("/login", (req, res) => {
   }
   res.render("login");
 });
+router.get("/signup", (req, res) => {
+  res.render("signup");
+});
+
+router.get("/post", (req, res) => {
+  res.render("post");
+});
+
 
 module.exports = router;

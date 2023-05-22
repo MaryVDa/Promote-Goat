@@ -14,6 +14,15 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main",
+    layoutsDir: __dirname + "/views/layouts",
+  })
+);
+app.set("view engine", "handlebars");
+
 //console.log(sequelize)
 //introduce cookies
 

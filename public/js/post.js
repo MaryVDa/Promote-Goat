@@ -1,15 +1,14 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const id = document.querySelector('#post-id').value.trim();
     const title = document.querySelector('#post-title').value.trim();
     const description = document.querySelector('#post-desc').value.trim();
-    const socMedia = document.querySelector('#post-socMedia').value.trim();
+    const socMed = document.querySelector('#post-socMed').value.trim();
   
-    if (id && title && description && socMedia) {
-      const response = await fetch(`/api/projects`, {
+    if (title && description && socMed) {
+      const response = await fetch(`/api/posts`, {
         method: 'POST',
-        body: JSON.stringify({ id, title, description, socMedia }),
+        body: JSON.stringify({ title, description, socMed }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -43,6 +42,6 @@ const newFormHandler = async (event) => {
     .querySelector('.new-post-form')
     .addEventListener('submit', newFormHandler);
   
-  document
-    .querySelector('.post-list')
-    .addEventListener('click', delButtonHandler);
+  // document
+  //   .querySelector('.post-list')
+    // .addEventListener('click', delButtonHandler);
