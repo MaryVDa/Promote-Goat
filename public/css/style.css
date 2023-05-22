@@ -1,4 +1,10 @@
 body {
+  margin: auto;
   color: white;
   background-color: #322c2c;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
 }
