@@ -37,6 +37,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
+// Set up the Handlebars engine
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main",
+    layoutsDir: __dirname + "/views/layouts",
+  })
+);
+app.set("view engine", "handlebars");
+
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
