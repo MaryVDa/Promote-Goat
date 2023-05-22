@@ -56,6 +56,11 @@ app.get("/post", (req, res) => {
   res.render("post");
 });
 
+app.post("/api/users", (req, res) => {
+  // Get the user data from the request body
+  res.send("User signed up successfully");
+});
+
 // TIMELINE.HANDLEBARS
 app.get("/timeline", (req, res) => {
   const data = {
