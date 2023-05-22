@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/timeline.css">
+<body>
+  <div class="timeline">
+    {{#each posts as |post|}}
+    <div class="timeline-item">
+      <div class="timeline-header">
+        <img class="avatar" src="{{post.user.avatar}}" alt="User Avatar">
+        <h4 class="username">{{post.user.username}}</h4>
+      </div>
+      <div class="timeline-content">
+        <img class="post-image" src="{{post.image}}" alt="Post Image">
+        <p class="post-caption">{{post.caption}}</p>
+        <div class="post-details">
+          <span class="likes">{{post.likes}} Likes</span>
+          <span class="comments">{{post.comments}} Comments</span>
+          <span class="timestamp">{{post.timestamp}}</span>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+  <script src="/js/timeline.js"></script>
+
+</body>
+</html>

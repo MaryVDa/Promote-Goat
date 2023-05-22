@@ -18,7 +18,7 @@ app.set("view engine", "handlebars");
 
 // Define routes and render templates
 
-//MAIN.HANDLEBARS
+// MAIN.HANDLEBARS
 app.get("/", (req, res) => {
   const data = {
     name: "John Doe",
@@ -29,13 +29,13 @@ app.get("/", (req, res) => {
   res.render("homepage", data);
 });
 
-//LOGIN.HANDLEBARS
+// LOGIN.HANDLEBARS
 app.get("/login", (req, res) => {
   // No specific data needed for login template
   res.render("login");
 });
 
-//PROFILE.HANDLEBARS
+// PROFILE.HANDLEBARS
 app.get("/profile", (req, res) => {
   const data = {
     name: "John Doe",
@@ -46,14 +46,34 @@ app.get("/profile", (req, res) => {
   res.render("profile", data);
 });
 
-//Signup.HANDLEBARS
+// SIGNUP.HANDLEBARS
 app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-//POST.HANDLEBARS
+// POST.HANDLEBARS
 app.get("/post", (req, res) => {
   res.render("post");
+});
+
+// TIMELINE.HANDLEBARS
+app.get("/timeline", (req, res) => {
+  const data = {
+    posts: [
+      {
+        id: 1,
+        username: "john_doe",
+        avatar: "/images/avatar1.jpg",
+        image: "/images/post1.jpg",
+        caption: "Beautiful sunset",
+        likes: 100,
+        comments: 20,
+      },
+      // Add more posts as needed
+    ],
+  };
+
+  res.render("timeline", data);
 });
 
 // Start the server
