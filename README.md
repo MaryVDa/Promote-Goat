@@ -15,7 +15,18 @@ ${
 
 ## Usage
 ${
-    Node.js, MySQL,
+    Node.js
+    Heroku
+    Insomnia
+    MySQL
+    Sequelize
+    Bulma
+    Advanced Javascript
+    Handlebars
+    NPM
+    MVC Paradigm
+    HTML
+    CSS
 }
 
 ## License
