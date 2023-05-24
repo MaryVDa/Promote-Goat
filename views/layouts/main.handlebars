@@ -14,13 +14,12 @@
         <h1>Promote Goat 🐐</h1>
 
         <nav>
-            <a class = "button is-dark" id = "home-btn" href="/">Home</a>
+            <a class = "button is-dark" id = "home-btn" href="/">Login</a>
             {{#if logged_in}}
                 <a href="/profile">Profile</a>
                 <a href="/homepage" class ="no-button" id ="logout">Logout</a>
                 <a href="/post">Promotes</a>
             {{else}}
-                <a class = "button is-warning" id="login-btn" href="/login">Login</a>
             {{/if}}
         </nav>
 
