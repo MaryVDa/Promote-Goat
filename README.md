@@ -37,4 +37,7 @@ Promote Goat is a website that allows a user to showcase and promote emerging an
 
 ## Questions
 If you have any questions about the repo, open an issue or contact us on GitHub! You can find more of our work at:   
-https://github.com/malikburrus0, https://github.com/MaryVda, https://github.com/NickLoeffler999, https://github.com/A.Turner3X
+* https://github.com/MaryVda
+* https://github.com/malikburrus0
+* https://github.com/NickLoeffler999
+* https://github.com/A.Turner3X
