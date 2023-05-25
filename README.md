@@ -1,7 +1,7 @@
 # Promote Goat 🐐
 
 ## Description
-Promote Goat is a website that allows a user to showcase and promote emerging and lesser-known artists through a new social media platform. Using Promote Goat will give artists the opportunity to grow and to branch out by posting their art for others to promote and give feedback. This website also allows a user to save their favorite promotes for future enjoyment.
+Promote Goat is a website that allows a user to showcase and promote emerging and lesser-known artists through a new social media platform. Using Promote Goat will give artists the opportunity to grow and branch out by posting their art for others to promote and give feedback. This website also allows a user to save their favorite promotes for future enjoyment.
 
 ## Table of Contents
 - [Deployed Site](#deployed-site)
@@ -30,9 +30,9 @@ Promote Goat is a website that allows a user to showcase and promote emerging an
 
 ## Contributing
    Contributors to this project: 
-* Mary Dault, 
-* Malik Burrus, 
-* Nicholas Loeffler, 
+* Mary Dault 
+* Malik Burrus
+* Nicholas Loeffler
 * Alvin Turner
 
 ## Questions
