@@ -10,7 +10,7 @@ Promote Goat is a website that allows a user to showcase and promote emerging an
 - [Questions](#questions)
 
 ## Deployed Site
-* 
+* https://promote-goat.herokuapp.com/
 
 
 ## Technologies Used   
